@@ -1,12 +1,11 @@
-# Twow Raid Visuals + WoW 1.12 DBC Patch Manager
+# WoW 1.12 DBC Patch Manager + Raid Visuals
 
 ![](./ss1.png)  
-To use this project's visuals, download [the latest release](https://github.com/MarcelineVQ/twow-raid-visuals/releases/latest) and unpack to your Turtle WoW `Data` folder.  
+To use this project's visuals, download [the latest release](https://github.com/liiora/raid-visuals/releases/latest) and move to your WoW `Data` folder.
 
 ## Patches overview
 
 The patches included in this repository adjust the visuals and sounds for several various spells and boss abilities.  They are applied in alphabetical order based on the patch file name so that later patches may override or build upon earlier ones.  
-The patches currently are based on twow `1.18.0` dbc's, simply change out the .dbc files in the `dbc/` folder to use other versions.  
 The highlights are summarised below:
 
 - **AQ20:**
