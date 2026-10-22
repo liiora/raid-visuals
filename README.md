@@ -159,6 +159,18 @@ Apply patches and build an MPQ archive (using default directories for DBCs, patc
 ./target/release/wow_dbc_patcher build --mpq patch-1.mpq
 ```
 
+Full sample (needs [smpq](https://launchpad.net/smpq) installed)
+
+```bash
+WOW_PATH= # path to your local wow installation. The folder where wow.exe lives
+
+rm -rf DBFilesClient/*.dbc
+smpq --extract ${WOW_PATH}/Data/dbc.MPQ \
+  -p ${WOW_PATH}/Data/patch.MPQ ${WOW_PATH}/Data/patch-1.mpq ${WOW_PATH}/Data/patch-2.mpq ${WOW_PATH}/Data/patch-3.mpq ${WOW_PATH}/Data/patch-4.mpq ${WOW_PATH}/Data/patch-5.mpq \
+  -- '*.dbc'
+./target/release/wow_dbc_patcher build  --dbc-dir DBFilesClient/ --mpq ${WOW_PATH}/Data/patch-O.mpq
+```
+
 You can override any of the input or output locations:
 
 - `--dbc-files <paths…>` – explicitly list DBC files to patch instead of scanning `dbc/`.
